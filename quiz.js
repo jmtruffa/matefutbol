@@ -35,6 +35,7 @@ const Quiz = {
 
         try {
             this.questions = await this.generateQuestions(topic);
+            this.shuffleOptions();
             document.getElementById('quizLoading').style.display = 'none';
             this.renderCurrentQuestion();
         } catch (error) {
@@ -57,8 +58,8 @@ Contenido específico a evaluar: ${topic.description}
 REGLAS:
 1. Las preguntas deben ser apropiadas para séptimo grado de la Ciudad de Buenos Aires.
 2. Nivel de dificultad: MEDIO-ALTO. No preguntes conceptos demasiado básicos. Incluí problemas que requieran razonamiento, cálculos de varios pasos, o aplicación de conceptos en contextos no triviales.
-3. Cada pregunta debe tener exactamente 4 opciones (A, B, C, D).
-4. Solo una opción es correcta. Las opciones incorrectas deben ser plausibles (errores comunes) para que el estudiante tenga que pensar.
+3. Cada pregunta debe tener exactamente 6 opciones (A, B, C, D, E, F).
+4. Solo una opción es correcta. Las 5 opciones incorrectas deben ser MUY SIMILARES a la correcta: números cercanos, errores de signo comunes, simplificaciones parciales, o distractores que parezcan correctos a primera vista. El estudiante debe tener que pensar y calcular para distinguir la verdadera respuesta.
 5. Incluí una explicación breve pero completa de por qué la respuesta es correcta y por qué las otras no.
 6. Usá ejemplos de fútbol cuando sea posible y naturales.
 7. Respondé ÚNICAMENTE con un array JSON válido. Sin markdown, sin texto adicional.
@@ -67,7 +68,7 @@ Formato exacto:
 [
   {
     "question": "texto de la pregunta",
-    "options": ["opción A", "opción B", "opción C", "opción D"],
+    "options": ["opción A", "opción B", "opción C", "opción D", "opción E", "opción F"],
     "correctIndex": 0,
     "explanation": "explicación de la respuesta correcta"
   }
@@ -117,6 +118,20 @@ Formato exacto:
         }
 
         return questions;
+    },
+
+    shuffleOptions() {
+        // Mezclar aleatoriamente las opciones de cada pregunta y ajustar correctIndex
+        this.questions.forEach(q => {
+            const pairs = q.options.map((opt, idx) => ({ option: opt, isCorrect: idx === q.correctIndex }));
+            // Fisher-Yates shuffle
+            for (let i = pairs.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [pairs[i], pairs[j]] = [pairs[j], pairs[i]];
+            }
+            q.options = pairs.map(p => p.option);
+            q.correctIndex = pairs.findIndex(p => p.isCorrect);
+        });
     },
 
     renderCurrentQuestion() {

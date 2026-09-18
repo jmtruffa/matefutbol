@@ -150,16 +150,30 @@ REGLAS ESTRICTAS:
             }
 
             const label = msg.role === 'assistant' ? '<span class="msg-label">Profe</span>' : '';
+            const contentHtml = msg.role === 'assistant'
+                ? this.renderMarkdown(msg.content)
+                : this.escapeHtml(msg.content);
             return `
                 <div class="chat-message ${msg.role}">
                     ${label}
-                    ${this.escapeHtml(msg.content)}
+                    ${contentHtml}
                 </div>
             `;
         }).join('');
 
         // Scroll al final
         container.scrollTop = container.scrollHeight;
+    },
+
+    renderMarkdown(text) {
+        try {
+            if (typeof marked !== 'undefined' && marked.parse) {
+                return marked.parse(text, { breaks: true });
+            }
+        } catch (e) {
+            console.warn('marked.js no disponible, usando texto plano');
+        }
+        return this.escapeHtml(text).replace(/\n/g, '<br>');
     },
 
     showTypingIndicator() {
