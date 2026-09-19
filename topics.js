@@ -104,14 +104,13 @@ const topics = [
             </ul>
             <p><strong>Importante:</strong> si el exponente es par, el resultado es positivo. Si es impar, conserva el signo.</p>
 
-            <h3>Recursos para Ampliar</h3>
-            <div class="resources-box">
-                <p>🎥 <strong>Khan Academy</strong> — videos y ejercicios para practicar (disponibles en español e inglés):</p>
-                <ul>
-                    <li><a href="https://es.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract" target="_blank">Números enteros: suma y resta</a></li>
-                    <li><a href="https://es.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-mult-div" target="_blank">Números enteros: multiplicación y división</a></li>
-                    <li><a href="https://es.khanacademy.org/math/arithmetic/arith-review-negative-numbers" target="_blank">Introducción a números negativos</a></li>
-                </ul>
+            <h3>📺 Videos para Ampliar</h3>
+            <div class="video-box">
+                <p>🎥 <strong>Khan Academy</strong> — mirá estos videos directamente acá (en inglés, para practicar el idioma):</p>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HBlS0akKTzzKuzNFXqM0Oq1" title="Khan Academy - Números Enteros" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p class="video-note">🔗 <a href="https://www.youtube.com/playlist?list=PLSQl0a2vh4HBlS0akKTzzKuzNFXqM0Oq1" target="_blank">Ver playlist completa en YouTube</a></p>
             </div>
         `
     },
@@ -231,14 +230,13 @@ const topics = [
                 <p>Para comparar fracciones, convertilas a decimal o buscá un común denominador. ¡Es como comparar estadísticas de jugadores!</p>
             </div>
 
-            <h3>Recursos para Ampliar</h3>
-            <div class="resources-box">
-                <p>🎥 <strong>Khan Academy</strong> — videos y ejercicios para practicar (disponibles en español e inglés):</p>
-                <ul>
-                    <li><a href="https://es.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals" target="_blank">Fracciones, decimales y porcentajes</a></li>
-                    <li><a href="https://es.khanacademy.org/math/arithmetic/fraction-arithmetic" target="_blank">Aritmética con fracciones</a></li>
-                    <li><a href="https://es.khanacademy.org/math/cc-sixth-grade-math/xf847229b06f75f36:decimales" target="_blank">Operaciones con decimales</a></li>
-                </ul>
+            <h3>📺 Videos para Ampliar</h3>
+            <div class="video-box">
+                <p>🎥 <strong>Khan Academy</strong> — mirá estos videos directamente acá (en inglés, para practicar el idioma):</p>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HCQHWDXEKSnY3-cygkXGiyN" title="Khan Academy - Fracciones y Decimales" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p class="video-note">🔗 <a href="https://www.youtube.com/playlist?list=PLSQl0a2vh4HCQHWDXEKSnY3-cygkXGiyN" target="_blank">Ver playlist completa en YouTube</a></p>
             </div>
         `
     },
@@ -332,13 +330,13 @@ const topics = [
                 <p><strong>Inversa:</strong> Si uno aumenta, el otro disminuye (más jugadores = menos tiempo).</p>
             </div>
 
-            <h3>Recursos para Ampliar</h3>
-            <div class="resources-box">
-                <p>🎥 <strong>Khan Academy</strong> — videos y ejercicios para practicar (disponibles en español e inglés):</p>
-                <ul>
-                    <li><a href="https://es.khanacademy.org/math/cc-seventh-grade-math/cc-7th-ratio-proportion" target="_blank">Proporciones y porcentajes</a></li>
-                    <li><a href="https://es.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals/cc-7th-percent-word-problems" target="_blank">Problemas verbales con porcentajes</a></li>
-                </ul>
+            <h3>📺 Videos para Ampliar</h3>
+            <div class="video-box">
+                <p>🎥 <strong>Khan Academy</strong> — mirá estos videos directamente acá (en inglés, para practicar el idioma):</p>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HCQHWDXEKSnY3-cygkXGiyN" title="Khan Academy - Porcentajes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p class="video-note">🔗 <a href="https://www.youtube.com/playlist?list=PLSQl0a2vh4HCQHWDXEKSnY3-cygkXGiyN" target="_blank">Ver playlist completa en YouTube</a></p>
             </div>
         `
     },
@@ -470,13 +468,13 @@ const topics = [
                 <p>Siempre verificá tu respuesta reemplazando en la ecuación original. ¡Es como revisar si el gol fue válido antes de festejar!</p>
             </div>
 
-            <h3>Recursos para Ampliar</h3>
-            <div class="resources-box">
-                <p>🎥 <strong>Khan Academy</strong> — videos y ejercicios para practicar (disponibles en español e inglés):</p>
-                <ul>
-                    <li><a href="https://es.khanacademy.org/math/cc-seventh-grade-math/cc-7th-expressions-equations" target="_blank">Expresiones y ecuaciones</a></li>
-                    <li><a href="https://es.khanacademy.org/math/algebra/x2f8bb11595b61c86:solve-linear-equations" target="_blank">Resolver ecuaciones lineales</a></li>
-                </ul>
+            <h3>📺 Videos para Ampliar</h3>
+            <div class="video-box">
+                <p>🎥 <strong>Khan Academy</strong> — mirá estos videos directamente acá (en inglés, para practicar el idioma):</p>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HD5_VHZK5wJ_WqIGMq6nsG2" title="Khan Academy - Ecuaciones" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p class="video-note">🔗 <a href="https://www.youtube.com/playlist?list=PLSQl0a2vh4HD5_VHZK5wJ_WqIGMq6nsG2" target="_blank">Ver playlist completa en YouTube</a></p>
             </div>
         `
     },
@@ -790,15 +788,13 @@ const topics = [
                 <p>Volumen = (36 × 4) / 3 = <strong>48 cm³</strong></p>
             </div>
 
-            <h3>Recursos para Ampliar</h3>
-            <div class="resources-box">
-                <p>🎥 <strong>Khan Academy</strong> — videos y ejercicios para practicar (disponibles en español e inglés):</p>
-                <ul>
-                    <li><a href="https://es-cl.khanacademy.org/math/es-cl-matematicas-7-basico/xb2ccc29debc0c470:geometria" target="_blank">Geometría — 7mo básico Chile</a> (muy similar al plan de CABA)</li>
-                    <li><a href="https://es.khanacademy.org/math/basic-geo/basic-geometry-area-perimeter" target="_blank">Áreas y perímetros</a></li>
-                    <li><a href="https://es.khanacademy.org/math/basic-geo/basic-geo-pythagorean-topic" target="_blank">Teorema de Pitágoras</a></li>
-                    <li><a href="https://es.khanacademy.org/math/geometry/hs-geo-analytic-geometry" target="_blank">Plano cartesiano</a></li>
-                </ul>
+            <h3>📺 Videos para Ampliar</h3>
+            <div class="video-box">
+                <p>🎥 <strong>Khan Academy</strong> — mirá estos videos directamente acá (en inglés, para practicar el idioma):</p>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HAfI8_cucuV3YwssaBqkrER" title="Khan Academy - Geometría" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p class="video-note">🔗 <a href="https://www.youtube.com/playlist?list=PLSQl0a2vh4HAfI8_cucuV3YwssaBqkrER" target="_blank">Ver playlist completa en YouTube</a></p>
             </div>
         `
     },
@@ -947,14 +943,13 @@ const topics = [
                 <p>Ej: al tirar una moneda, P(cara) + P(ceca) = 0.5 + 0.5 = 1</p>
             </div>
 
-            <h3>Recursos para Ampliar</h3>
-            <div class="resources-box">
-                <p>🎥 <strong>Khan Academy</strong> — videos y ejercicios para practicar (disponibles en español e inglés):</p>
-                <ul>
-                    <li><a href="https://es.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics" target="_blank">Probabilidad y estadística</a></li>
-                    <li><a href="https://es.khanacademy.org/math/probability/probability-geometry" target="_blank">Probabilidad básica</a></li>
-                    <li><a href="https://es.khanacademy.org/math/statistics-probability" target="_blank">Estadística y probabilidad (curso completo)</a></li>
-                </ul>
+            <h3>📺 Videos para Ampliar</h3>
+            <div class="video-box">
+                <p>🎥 <strong>Khan Academy</strong> — mirá estos videos directamente acá (en inglés, para practicar el idioma):</p>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HB6wAjVm5BnIybSh6izZExi" title="Khan Academy - Estadística y Probabilidad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p class="video-note">🔗 <a href="https://www.youtube.com/playlist?list=PLSQl0a2vh4HB6wAjVm5BnIybSh6izZExi" target="_blank">Ver playlist completa en YouTube</a></p>
             </div>
         `
     }
