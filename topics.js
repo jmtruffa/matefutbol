@@ -103,6 +103,16 @@ const topics = [
                 <li>(−3)² = (−3) × (−3) = +9</li>
             </ul>
             <p><strong>Importante:</strong> si el exponente es par, el resultado es positivo. Si es impar, conserva el signo.</p>
+
+            <h3>Recursos para Ampliar</h3>
+            <div class="resources-box">
+                <p>🎥 <strong>Khan Academy</strong> — videos y ejercicios para practicar (disponibles en español e inglés):</p>
+                <ul>
+                    <li><a href="https://es.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract" target="_blank">Números enteros: suma y resta</a></li>
+                    <li><a href="https://es.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-mult-div" target="_blank">Números enteros: multiplicación y división</a></li>
+                    <li><a href="https://es.khanacademy.org/math/arithmetic/arith-review-negative-numbers" target="_blank">Introducción a números negativos</a></li>
+                </ul>
+            </div>
         `
     },
     {
@@ -220,6 +230,16 @@ const topics = [
                 <span class="tip-title">💡 Tip</span>
                 <p>Para comparar fracciones, convertilas a decimal o buscá un común denominador. ¡Es como comparar estadísticas de jugadores!</p>
             </div>
+
+            <h3>Recursos para Ampliar</h3>
+            <div class="resources-box">
+                <p>🎥 <strong>Khan Academy</strong> — videos y ejercicios para practicar (disponibles en español e inglés):</p>
+                <ul>
+                    <li><a href="https://es.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals" target="_blank">Fracciones, decimales y porcentajes</a></li>
+                    <li><a href="https://es.khanacademy.org/math/arithmetic/fraction-arithmetic" target="_blank">Aritmética con fracciones</a></li>
+                    <li><a href="https://es.khanacademy.org/math/cc-sixth-grade-math/xf847229b06f75f36:decimales" target="_blank">Operaciones con decimales</a></li>
+                </ul>
+            </div>
         `
     },
     {
@@ -310,6 +330,15 @@ const topics = [
                 <span class="tip-title">💡 Cómo distinguir Directa de Inversa</span>
                 <p><strong>Directa:</strong> Si uno aumenta, el otro también (más jugadores = más goles).</p>
                 <p><strong>Inversa:</strong> Si uno aumenta, el otro disminuye (más jugadores = menos tiempo).</p>
+            </div>
+
+            <h3>Recursos para Ampliar</h3>
+            <div class="resources-box">
+                <p>🎥 <strong>Khan Academy</strong> — videos y ejercicios para practicar (disponibles en español e inglés):</p>
+                <ul>
+                    <li><a href="https://es.khanacademy.org/math/cc-seventh-grade-math/cc-7th-ratio-proportion" target="_blank">Proporciones y porcentajes</a></li>
+                    <li><a href="https://es.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals/cc-7th-percent-word-problems" target="_blank">Problemas verbales con porcentajes</a></li>
+                </ul>
             </div>
         `
     },
@@ -439,6 +468,15 @@ const topics = [
             <div class="tip-box">
                 <span class="tip-title">💡 Consejo</span>
                 <p>Siempre verificá tu respuesta reemplazando en la ecuación original. ¡Es como revisar si el gol fue válido antes de festejar!</p>
+            </div>
+
+            <h3>Recursos para Ampliar</h3>
+            <div class="resources-box">
+                <p>🎥 <strong>Khan Academy</strong> — videos y ejercicios para practicar (disponibles en español e inglés):</p>
+                <ul>
+                    <li><a href="https://es.khanacademy.org/math/cc-seventh-grade-math/cc-7th-expressions-equations" target="_blank">Expresiones y ecuaciones</a></li>
+                    <li><a href="https://es.khanacademy.org/math/algebra/x2f8bb11595b61c86:solve-linear-equations" target="_blank">Resolver ecuaciones lineales</a></li>
+                </ul>
             </div>
         `
     },
@@ -752,9 +790,15 @@ const topics = [
                 <p>Volumen = (36 × 4) / 3 = <strong>48 cm³</strong></p>
             </div>
 
-            <div class="tip-box">
-                <span class="tip-title">💡 Importante</span>
-                <p>En 7mo grado solo se estudian <strong>prismas</strong> (rectangulares, triangulares, de base cuadrada) y <strong>pirámides</strong> (de base cuadrada o triangular). NO esferas, conos ni cilindros — esos se ven en grados posteriores.</p>
+            <h3>Recursos para Ampliar</h3>
+            <div class="resources-box">
+                <p>🎥 <strong>Khan Academy</strong> — videos y ejercicios para practicar (disponibles en español e inglés):</p>
+                <ul>
+                    <li><a href="https://es-cl.khanacademy.org/math/es-cl-matematicas-7-basico/xb2ccc29debc0c470:geometria" target="_blank">Geometría — 7mo básico Chile</a> (muy similar al plan de CABA)</li>
+                    <li><a href="https://es.khanacademy.org/math/basic-geo/basic-geometry-area-perimeter" target="_blank">Áreas y perímetros</a></li>
+                    <li><a href="https://es.khanacademy.org/math/basic-geo/basic-geo-pythagorean-topic" target="_blank">Teorema de Pitágoras</a></li>
+                    <li><a href="https://es.khanacademy.org/math/geometry/hs-geo-analytic-geometry" target="_blank">Plano cartesiano</a></li>
+                </ul>
             </div>
         `
     },
@@ -901,6 +945,16 @@ const topics = [
                 <span class="tip-title">💡 Consejo</span>
                 <p>La suma de probabilidades de todos los resultados posibles siempre es <strong>1</strong> (o 100%).</p>
                 <p>Ej: al tirar una moneda, P(cara) + P(ceca) = 0.5 + 0.5 = 1</p>
+            </div>
+
+            <h3>Recursos para Ampliar</h3>
+            <div class="resources-box">
+                <p>🎥 <strong>Khan Academy</strong> — videos y ejercicios para practicar (disponibles en español e inglés):</p>
+                <ul>
+                    <li><a href="https://es.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics" target="_blank">Probabilidad y estadística</a></li>
+                    <li><a href="https://es.khanacademy.org/math/probability/probability-geometry" target="_blank">Probabilidad básica</a></li>
+                    <li><a href="https://es.khanacademy.org/math/statistics-probability" target="_blank">Estadística y probabilidad (curso completo)</a></li>
+                </ul>
             </div>
         `
     }
