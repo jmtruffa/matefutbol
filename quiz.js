@@ -51,7 +51,11 @@ const Quiz = {
     },
 
     async generateQuestions(topic) {
+        // Seed aleatorio para forzar variedad en cada evaluación
+        const seed = Math.floor(Math.random() * 100000);
         const prompt = `Generá exactamente 10 preguntas de opción múltiple en español (Argentina) para un estudiante de séptimo grado (12-13 años) sobre el tema: "${topic.title}".
+
+IMPORTANTE: Esta es la evaluación número ${seed}. NO repetás preguntas que hayas generado antes. Variá los números, los contextos y los enunciados. Cubrí distintos subtemas dentro de "${topic.title}".
 
 Contenido específico a evaluar: ${topic.description}
 
@@ -61,7 +65,7 @@ REGLAS:
 3. Cada pregunta debe tener exactamente 6 opciones (A, B, C, D, E, F).
 4. Solo una opción es correcta. Las 5 opciones incorrectas deben ser MUY SIMILARES a la correcta: números cercanos, errores de signo comunes, simplificaciones parciales, o distractores que parezcan correctos a primera vista. El estudiante debe tener que pensar y calcular para distinguir la verdadera respuesta.
 5. Incluí una explicación breve pero completa de por qué la respuesta es correcta y por qué las otras no.
-6. Usá ejemplos de fútbol cuando sea posible y naturales.
+6. Usá ejemplos de fútbol cuando sea posible y naturales. Variá los equipos, jugadores, estadios y situaciones. NO uses siempre el mismo ejemplo de campo de fútbol.
 7. Respondé ÚNICAMENTE con un array JSON válido. Sin markdown, sin texto adicional.
 
 Formato exacto:
@@ -89,8 +93,8 @@ Formato exacto:
                     },
                     { role: 'user', content: prompt }
                 ],
-                temperature: 0.7,
-                max_tokens: 3500
+                temperature: 0.9,
+                max_tokens: 4000
             })
         });
 
