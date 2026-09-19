@@ -446,8 +446,51 @@ const topics = [
         id: 'geometria',
         title: 'Geometría',
         icon: '📐',
-        description: 'Figuras, áreas, perímetros y volúmenes',
+        description: 'Figuras planas, plano cartesiano, cuerpos geométricos, áreas, perímetros y volúmenes',
         content: `
+            <h3>Plano Cartesiano</h3>
+            <p>El <strong>plano cartesiano</strong> está formado por dos rectas perpendiculares: el <strong>eje x</strong> (horizontal) y el <strong>eje y</strong> (vertical). Se usan para ubicar puntos con coordenadas (x, y).</p>
+
+            <div class="diagram-container">
+                <svg viewBox="0 0 400 300" class="diagram-svg">
+                    <!-- Axes -->
+                    <line x1="200" y1="20" x2="200" y2="280" stroke="#333" stroke-width="2"/>
+                    <polygon points="200,20 195,30 205,30" fill="#333"/>
+                    <text x="210" y="25" font-size="12" fill="#333">y</text>
+                    <line x1="20" y1="150" x2="380" y2="150" stroke="#333" stroke-width="2"/>
+                    <polygon points="380,150 370,145 370,155" fill="#333"/>
+                    <text x="365" y="140" font-size="12" fill="#333">x</text>
+                    <text x="185" y="165" font-size="12" fill="#333">0</text>
+                    
+                    <!-- Grid lines -->
+                    <line x1="100" y1="20" x2="100" y2="280" stroke="#ddd" stroke-width="1"/>
+                    <line x1="300" y1="20" x2="300" y2="280" stroke="#ddd" stroke-width="1"/>
+                    <line x1="20" y1="50" x2="380" y2="50" stroke="#ddd" stroke-width="1"/>
+                    <line x1="20" y1="250" x2="380" y2="250" stroke="#ddd" stroke-width="1"/>
+                    
+                    <!-- Points -->
+                    <circle cx="250" cy="100" r="5" fill="#c62828"/>
+                    <text x="260" y="95" font-size="12" fill="#c62828" font-weight="bold">A(2, 2)</text>
+                    <circle cx="150" cy="200" r="5" fill="#1565c0"/>
+                    <text x="100" y="195" font-size="12" fill="#1565c0" font-weight="bold">B(-2, -1)</text>
+                    <circle cx="300" cy="250" r="5" fill="#2e7d32"/>
+                    <text x="310" y="265" font-size="12" fill="#2e7d32" font-weight="bold">C(4, -2)</text>
+                </svg>
+            </div>
+
+            <div class="example-box">
+                <span class="example-title">📌 Ejemplo</span>
+                <p>Ubicá estos puntos en el plano: D(3, 1), E(-1, 2), F(0, -3)</p>
+                <p><strong>D(3, 1):</strong> 3 a la derecha, 1 arriba</p>
+                <p><strong>E(-1, 2):</strong> 1 a la izquierda, 2 arriba</p>
+                <p><strong>F(0, -3):</strong> en el eje y, 3 abajo</p>
+            </div>
+
+            <div class="tip-box">
+                <span class="tip-title">💡 Truco</span>
+                <p>Primero caminás en x (derecha si es positivo, izquierda si es negativo), y después en y (arriba si es positivo, abajo si es negativo). ¡Es como mover un jugador en la cancha!</p>
+            </div>
+
             <h3>Ángulos</h3>
             <p>Un <strong>ángulo</strong> se forma por dos semirrectas con el mismo origen (vértice).</p>
 
@@ -508,7 +551,7 @@ const topics = [
                 <li><strong>Colaterales:</strong> suman 180°</li>
             </ul>
 
-            <h4>Triángulos</h4>
+            <h3>Triángulos</h3>
             <p>Polígono de 3 lados. La suma de sus ángulos internos siempre es <strong>180°</strong>.</p>
 
             <div class="diagram-container">
@@ -537,13 +580,25 @@ const topics = [
                 <li><strong>Obtusángulo:</strong> tiene un ángulo obtuso</li>
             </ul>
 
+            <h4>Teorema de Pitágoras</h4>
+            <p>En un triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos:</p>
+            <p style="text-align:center; font-size:1.3rem; margin:16px 0;"><strong>a² + b² = c²</strong></p>
+
             <div class="example-box">
-                <span class="example-title">📌 Propiedad Importante</span>
-                <p>En un triángulo rectángulo, el lado opuesto al ángulo recto se llama <strong>hipotenusa</strong> y es el lado más largo.</p>
-                <p><strong>Pitágoras:</strong> a² + b² = c²</p>
+                <span class="example-title">📌 Ejemplo</span>
+                <p>Un triángulo tiene catetos de 3cm y 4cm. ¿Cuánto mide la hipotenusa?</p>
+                <p>c² = 3² + 4² = 9 + 16 = 25</p>
+                <p>c = √25 = <strong>5 cm</strong></p>
             </div>
 
-            <h4>Cuadriláteros</h4>
+            <div class="example-box">
+                <span class="example-title">📌 Ejemplo Fútbol</span>
+                <p>Un entrenador quiere poner una valla diagonal en un campo rectangular de 30m × 40m. ¿Cuántos metros de valla necesita?</p>
+                <p>c² = 30² + 40² = 900 + 1600 = 2500</p>
+                <p>c = √2500 = <strong>50 metros</strong></p>
+            </div>
+
+            <h3>Cuadriláteros</h3>
             <p>Polígonos de 4 lados. La suma de sus ángulos internos es <strong>360°</strong>.</p>
 
             <div class="diagram-container">
@@ -570,7 +625,7 @@ const topics = [
                 </svg>
             </div>
 
-            <h4>Áreas y Perímetros</h4>
+            <h3>Áreas y Perímetros</h3>
             <table style="width:100%; border-collapse:collapse; margin:16px 0;">
                 <tr style="background:#e3f2fd;">
                     <th style="padding:10px; border:1px solid #bbb;">Figura</th>
@@ -593,6 +648,21 @@ const topics = [
                     <td style="padding:10px; border:1px solid #bbb;">(b × h) / 2</td>
                 </tr>
                 <tr style="background:#f9f9f9;">
+                    <td style="padding:10px; border:1px solid #bbb;">Paralelogramo (b, h)</td>
+                    <td style="padding:10px; border:1px solid #bbb;">suma de lados</td>
+                    <td style="padding:10px; border:1px solid #bbb;">b × h</td>
+                </tr>
+                <tr>
+                    <td style="padding:10px; border:1px solid #bbb;">Rombo (D, d)</td>
+                    <td style="padding:10px; border:1px solid #bbb;">4 × lado</td>
+                    <td style="padding:10px; border:1px solid #bbb;">(D × d) / 2</td>
+                </tr>
+                <tr style="background:#f9f9f9;">
+                    <td style="padding:10px; border:1px solid #bbb;">Trapecio (B, b, h)</td>
+                    <td style="padding:10px; border:1px solid #bbb;">suma de lados</td>
+                    <td style="padding:10px; border:1px solid #bbb;">((B + b) × h) / 2</td>
+                </tr>
+                <tr>
                     <td style="padding:10px; border:1px solid #bbb;">Círculo (radio r)</td>
                     <td style="padding:10px; border:1px solid #bbb;">2πr</td>
                     <td style="padding:10px; border:1px solid #bbb;">πr²</td>
@@ -601,15 +671,68 @@ const topics = [
 
             <div class="example-box">
                 <span class="example-title">📌 Ejemplo</span>
-                <p>¿Cuál es el área de una cancha de fútbol de 100m × 70m?</p>
-                <p>Área = 100 × 70 = <strong>7.000 m²</strong></p>
+                <p>¿Cuál es el área de un rombo cuyas diagonales miden 8cm y 6cm?</p>
+                <p>Área = (8 × 6) / 2 = <strong>24 cm²</strong></p>
             </div>
 
-            <h4>Cuerpos Geométricos</h4>
-            <p><strong>Prisma:</strong> tiene dos bases iguales y paralelas, y caras laterales rectangulares.</p>
-            <p><strong>Pirámide:</strong> tiene una base poligonal y caras laterales triangulares que se juntan en un vértice.</p>
+            <div class="example-box">
+                <span class="example-title">📌 Ejemplo</span>
+                <p>Un trapecio tiene bases de 10cm y 6cm, y altura 4cm. ¿Cuál es su área?</p>
+                <p>Área = ((10 + 6) × 4) / 2 = (16 × 4) / 2 = <strong>32 cm²</strong></p>
+            </div>
 
-            <h4>Volumen</h4>
+            <h3>Circunferencia y Círculo</h3>
+            <p>La <strong>circunferencia</strong> es la línea curva cerrada donde todos los puntos están a la misma distancia del centro. El <strong>círculo</strong> es la figura formada por la circunferencia y su interior.</p>
+
+            <h4>Elementos:</h4>
+            <ul>
+                <li><strong>Centro (O):</strong> punto equidistante de todos los puntos de la circunferencia</li>
+                <li><strong>Radio (r):</strong> segmento del centro a cualquier punto de la circunferencia</li>
+                <li><strong>Diámetro (d):</strong> segmento que pasa por el centro y une dos puntos. d = 2r</li>
+                <li><strong>Cuerda:</strong> segmento que une dos puntos de la circunferencia (no necesariamente pasa por el centro)</li>
+                <li><strong>Arco:</strong> porción de circunferencia entre dos puntos</li>
+            </ul>
+
+            <div class="example-box">
+                <span class="example-title">📌 Ejemplo</span>
+                <p>Si el radio de un círculo es 5cm:</p>
+                <p>Diámetro = 2 × 5 = <strong>10 cm</strong></p>
+                <p>Perímetro (circunferencia) = 2 × π × 5 ≈ 2 × 3.14 × 5 = <strong>31.4 cm</strong></p>
+                <p>Área = π × 5² ≈ 3.14 × 25 = <strong>78.5 cm²</strong></p>
+            </div>
+
+            <h3>Cuerpos Geométricos</h3>
+            <p><strong>Prisma:</strong> tiene dos bases iguales y paralelas, y caras laterales rectangulares.</p>
+            <p><strong>Pirámide:</strong> tiene una base poligonal y caras laterales triangulares que se juntan en un vértice (cúspide).</p>
+
+            <h4>Elementos de los cuerpos:</h4>
+            <ul>
+                <li><strong>Caras:</strong> superficies planas que lo limitan</li>
+                <li><strong>Aristas:</strong> segmentos donde se unen dos caras</li>
+                <li><strong>Vértices:</strong> puntos donde se unen tres o más aristas</li>
+            </ul>
+
+            <div class="example-box">
+                <span class="example-title">📌 Ejemplo: Cubo (prisma cuadrado)</span>
+                <p>6 caras, 12 aristas, 8 vértices</p>
+            </div>
+
+            <h4>Desarrollos Planos</h4>
+            <p>El <strong>desarrollo plano</strong> de un cuerpo geométrico es la figura que se obtiene al "desarmarlo" y aplanarlo. Es útil para calcular el área total.</p>
+
+            <div class="example-box">
+                <span class="example-title">📌 Desarrollo de un prisma rectangular</span>
+                <p>Se forma por 6 rectángulos: 2 bases iguales + 4 caras laterales.</p>
+                <p><strong>Área total</strong> = 2 × (área base) + (perímetro base × altura)</p>
+            </div>
+
+            <div class="example-box">
+                <span class="example-title">📌 Desarrollo de una pirámide cuadrangular</span>
+                <p>Se forma por 1 cuadrado (base) + 4 triángulos iguales (caras laterales).</p>
+                <p><strong>Área total</strong> = área base + 4 × (área de cada triángulo)</p>
+            </div>
+
+            <h3>Volumen</h3>
             <div class="example-box">
                 <span class="example-title">📌 Fórmulas</span>
                 <p><strong>Volumen de prisma:</strong> V = Área de la base × altura</p>
@@ -620,6 +743,18 @@ const topics = [
                 <span class="example-title">📌 Ejemplo</span>
                 <p>Una caja de botines mide 30cm × 20cm × 15cm.</p>
                 <p>Volumen = 30 × 20 × 15 = <strong>9.000 cm³</strong></p>
+            </div>
+
+            <div class="example-box">
+                <span class="example-title">📌 Ejemplo</span>
+                <p>Una pirámide de base cuadrada de 6cm de lado y 4cm de altura:</p>
+                <p>Área base = 6 × 6 = 36 cm²</p>
+                <p>Volumen = (36 × 4) / 3 = <strong>48 cm³</strong></p>
+            </div>
+
+            <div class="tip-box">
+                <span class="tip-title">💡 Importante</span>
+                <p>En 7mo grado solo se estudian <strong>prismas</strong> (rectangulares, triangulares, de base cuadrada) y <strong>pirámides</strong> (de base cuadrada o triangular). NO esferas, conos ni cilindros — esos se ven en grados posteriores.</p>
             </div>
         `
     },

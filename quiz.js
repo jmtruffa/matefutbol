@@ -66,7 +66,8 @@ REGLAS:
 4. Solo una opción es correcta. Las 5 opciones incorrectas deben ser MUY SIMILARES a la correcta: números cercanos, errores de signo comunes, simplificaciones parciales, o distractores que parezcan correctos a primera vista. El estudiante debe tener que pensar y calcular para distinguir la verdadera respuesta.
 5. Incluí una explicación breve pero completa de por qué la respuesta es correcta y por qué las otras no.
 6. Usá ejemplos de fútbol cuando sea posible y naturales. Variá los equipos, jugadores, estadios y situaciones. NO uses siempre el mismo ejemplo de campo de fútbol.
-7. Respondé ÚNICAMENTE con un array JSON válido. Sin markdown, sin texto adicional.
+7. SCOPE RESTRICTO - Solo evaluar contenidos que están en el currículo de 7mo grado de CABA. NO preguntes sobre: esferas, conos, cilindros, cuerpos de revolución, logaritmos, funciones cuadráticas, trigonometría, ni temas de otros grados. En cuerpos geométricos, solo prismas (rectangulares, triangulares, de base cuadrada) y pirámides (de base cuadrada, triangular).
+8. Respondé ÚNICAMENTE con un array JSON válido. Sin markdown, sin texto adicional.
 
 Formato exacto:
 [
